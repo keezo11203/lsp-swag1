@@ -1,14 +1,15 @@
 package org.howard.edu.hw2;
 
-import java.util.LinkedHashMap;
+import java.io.FileNotFoundException;
+import java.util.HashMap;
 
 public class FileReader {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         FileReader fr = new FileReader();
-        LinkedHashMap<String, Integer> my_map = new LinkedHashMap<String, Integer>(); //I decided to use a hash map because it is the most similar to a dictionary in python
+        HashMap<String, Integer> my_map = new HashMap<String, Integer>(); //I decided to use a hash map because it is the most similar to a dictionary in python
 
-        String file_string = fr.readToString("source/main/java/resources/words.txt"); //store the text from the file in a string
+        String file_string = fr.readToString("main/java/resources/words.txt"); //store the text from the file in a string
 		String[] separated = file_string.toLowerCase().split(" "); //put each word into an array removing all punctuation and spaces
 		for (int x = 0; x < separated.length; x++) {
 		    if (separated[x].length() > 3) {
