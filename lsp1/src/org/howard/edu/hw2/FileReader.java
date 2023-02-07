@@ -1,3 +1,4 @@
+// Kaitlyn Ellis
 package org.howard.edu.hw2;
 import java.io.File;
 import java.io.FileNotFoundException;
