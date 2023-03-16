@@ -3,6 +3,7 @@ package org.howard.edu.hw5;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.BooleanSupplier;
 
 public class IntegerSet {
     private List<Integer> my_set;
@@ -199,13 +200,8 @@ public class IntegerSet {
 		
 	}
 
-	public Object getElements() {
+	public BooleanSupplier isEmpty() {
 		// TODO Auto-generated method stub
 		return null;
-	}
-
-	public void addAll(int i, int j, int k, int l) {
-		// TODO Auto-generated method stub
-		
 	}
 }
